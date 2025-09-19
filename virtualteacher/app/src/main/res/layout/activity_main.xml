@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/centera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:text="TextView" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="1080dp"
+        android:layout_height="2160dp"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:visibility="gone"
+            app:loopCount="1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:srcCompat="@drawable/initial" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottoma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/BottomCentera"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:text="TextView" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTopLefta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/BottomCentera"
+            android:layout_toLeftOf="@+id/BottomCentera">
+
+            <TextView
+                android:id="@+id/topLeftCentera"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                android:text="TextView" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutOnea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/topLeftCentera"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/topLeftCentera"
+                android:layout_toLeftOf="@+id/topLeftCentera">
+
+                <TextView
+                    android:id="@+id/TopLeftCornerDividera"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:text="TextView" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutOneOnea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/TopLeftCornerDividera"
+                    android:layout_toStartOf="@+id/TopLeftCornerDividera"
+                    android:layout_toLeftOf="@+id/TopLeftCornerDividera">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutddOneOnea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView6"
+                        android:layout_alignEnd="@+id/textView6"
+                        android:layout_alignRight="@+id/textView6"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true">
+
+                        <Button
+                            android:id="@+id/backbtjkn3"
+                            android:layout_width="45dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="false"
+                            android:layout_alignParentBottom="false"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="-1dp"
+                            android:background="@drawable/backbutton"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutTopLeftabc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/BottomCentera"
+            android:layout_alignLeft="@+id/BottomCentera"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/topLeftCenterabc"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                android:text="TextView" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutTwoabc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/TopLeftCornerDivider2abc"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:text="TextView" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutTwoFourabc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/TopLeftCornerDivider2abc"
+                    android:layout_alignParentBottom="false"
+                    android:layout_toEndOf="@+id/TopLeftCornerDivider2abc"
+                    android:layout_toRightOf="@+id/TopLeftCornerDivider2abc">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/toggle_button_background"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

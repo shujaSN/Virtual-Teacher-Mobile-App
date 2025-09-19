@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_weight="2"
+    android:background="#b0e9f7"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/centera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:text="TextView" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="1080dp"
+        android:layout_height="2160dp"
+        android:background="#b0e9f7"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:loopCount="1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:srcCompat="@drawable/initiallearn" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottoma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/BottomCentera"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:text="TextView" />
+
+        <RelativeLayout
+            android:id="@+id/layoutTopLefta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/BottomCentera"
+            android:layout_toLeftOf="@+id/BottomCentera">
+
+            <TextView
+                android:id="@+id/topLeftCentera"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                android:text="TextView" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutOnea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/topLeftCentera"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/topLeftCentera"
+                android:layout_toLeftOf="@+id/topLeftCentera">
+
+                <TextView
+                    android:id="@+id/TopLeftCornerDividera"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:text="TextView" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutOneOnea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/TopLeftCornerDividera"
+                    android:layout_toStartOf="@+id/TopLeftCornerDividera"
+                    android:layout_toLeftOf="@+id/TopLeftCornerDividera">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="TextView" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutddddOneOnea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/textView6"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toStartOf="@+id/textView6"
+                        android:layout_toLeftOf="@+id/textView6">
+
+                        <TextView
+                            android:id="@+id/tddextView6"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="TextView" />
+
+                        <RelativeLayout
+                            android:id="@+id/layoutddOsdneOnea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/TopLeftCornerDivider"
+                            android:layout_toStartOf="@+id/TopLeftCornerDivider"
+                            android:layout_toLeftOf="@+id/TopLeftCornerDivider">
+
+                            <Button
+                                android:id="@+id/backbtjkn3"
+                                android:layout_width="45dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="false"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="-1dp"
+                                android:background="@drawable/backbutton"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutThdasree"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/BottomLeftdCornerDivider"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:text="TextView" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutThdsareeThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/BottomLeftdCornerDivider"
+                        android:layout_alignEnd="@+id/BottomLeftdCornerDivider"
+                        android:layout_alignRight="@+id/BottomLeftdCornerDivider"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="false">
+
+                        <TextView
+                            android:id="@+id/dasdasdasdas"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <RelativeLayout
+                            android:id="@+id/fsdfddf"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/dasdasdasdas">
+
+                            <ImageView
+                                android:id="@+id/eyetalk"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/eyebtn" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/fsdfdf"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/dasdasdasdas"
+                            android:layout_alignParentBottom="false">
+
+                            <ImageView
+                                android:id="@+id/nosetalk"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/nosebtn" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layoutwThdasree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/BottomLeftdCornwerDivider"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:text="TextView" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutThdsdsareeThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/BottomLeftdCornwerDivider"
+                    android:layout_alignEnd="@+id/BottomLeftdCornwerDivider"
+                    android:layout_alignRight="@+id/BottomLeftdCornwerDivider"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="false">
+
+                    <TextView
+                        android:id="@+id/bottomLeftdCodrnerDivider"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:text="TextView" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutThdsadsdsaareeThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bottomLeftdCodrnerDivider"
+                        android:layout_alignEnd="@+id/bottomLeftdCodrnerDivider">
+
+                        <TextView
+                            android:id="@+id/dasdasdasdas2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <RelativeLayout
+                            android:id="@+id/dasdsadas"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/dasdasdasdas2">
+
+                            <ImageView
+                                android:id="@+id/liptalk"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/lipbtn" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/dssadddd"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/dasdasdasdas2"
+                            android:layout_alignParentBottom="false">
+
+                            <ImageView
+                                android:id="@+id/handtalk"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/handbtn" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutThdsadsardsaeeThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/bottomLeftdCodrnerDivider"
+                        android:layout_alignEnd="@+id/bottomLeftdCodrnerDivider"
+                        android:layout_alignRight="@+id/bottomLeftdCodrnerDivider"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="false">
+
+                        <TextView
+                            android:id="@+id/dasdasdasdas3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true" />
+
+                        <RelativeLayout
+                            android:id="@+id/dssaddddddd"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/dasdasdasdas3"
+                            android:layout_alignParentTop="false">
+
+                            <ImageView
+                                android:id="@+id/feettalk"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                app:srcCompat="@drawable/feetbtn" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutTopLeftabc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/BottomCentera"
+            android:layout_alignLeft="@+id/BottomCentera"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/topLeftCenterabc"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                android:text="TextView" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutTwoabc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/TopLeftCornerDivider2abc"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:text="TextView" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutTwoFourabc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/TopLeftCornerDivider2abc"
+                    android:layout_alignParentBottom="false"
+                    android:layout_toEndOf="@+id/TopLeftCornerDivider2abc"
+                    android:layout_toRightOf="@+id/TopLeftCornerDivider2abc">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/toggle_button_background"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
